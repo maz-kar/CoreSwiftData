@@ -16,6 +16,7 @@
 		6B6915A82C7EF2B8000F138D /* CoreSwiftDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6915A72C7EF2B8000F138D /* CoreSwiftDataTests.swift */; };
 		6B6915B22C7EF2B8000F138D /* CoreSwiftDataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6915B12C7EF2B8000F138D /* CoreSwiftDataUITests.swift */; };
 		6B6915B42C7EF2B8000F138D /* CoreSwiftDataUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6915B32C7EF2B8000F138D /* CoreSwiftDataUITestsLaunchTests.swift */; };
+		6B6915C12C7EF488000F138D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6B6915C02C7EF488000F138D /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		6B6915AD2C7EF2B8000F138D /* CoreSwiftDataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreSwiftDataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B6915B12C7EF2B8000F138D /* CoreSwiftDataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreSwiftDataUITests.swift; sourceTree = "<group>"; };
 		6B6915B32C7EF2B8000F138D /* CoreSwiftDataUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreSwiftDataUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6B6915C02C7EF488000F138D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 		6B6915852C7EF2B6000F138D = {
 			isa = PBXGroup;
 			children = (
+				6B6915C02C7EF488000F138D /* README.md */,
 				6B6915902C7EF2B6000F138D /* CoreSwiftData */,
 				6B6915A62C7EF2B8000F138D /* CoreSwiftDataTests */,
 				6B6915B02C7EF2B8000F138D /* CoreSwiftDataUITests */,
@@ -237,6 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B6915C12C7EF488000F138D /* README.md in Resources */,
 				6B6915992C7EF2B8000F138D /* Preview Assets.xcassets in Resources */,
 				6B6915962C7EF2B8000F138D /* Assets.xcassets in Resources */,
 			);
