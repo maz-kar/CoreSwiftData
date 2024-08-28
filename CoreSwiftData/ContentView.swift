@@ -11,15 +11,15 @@ import CoreData
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
 
-    @FetchRequest(
+    @FetchRequest( //This sortes all the data in this request here by timestamp
         sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
         animation: .default)
-    private var items: FetchedResults<Item>
+    private var items: FetchedResults<Item> //items var is @FetchRequest
 
     var body: some View {
         NavigationView {
             List {
-                ForEach(items) { item in
+                ForEach(items) { item in //Our first data is a List of items
                     NavigationLink {
                         Text("Item at \(item.timestamp!, formatter: itemFormatter)")
                     } label: {

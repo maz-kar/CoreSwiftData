@@ -7,8 +7,8 @@
 
 import CoreData
 
-struct PersistenceController {
-    static let shared = PersistenceController()
+struct PersistenceController { //This controller holds our Container
+    static let shared = PersistenceController() //singleton: one instance that we gonno use in the entire app
 
     static var preview: PersistenceController = {
         let result = PersistenceController(inMemory: true)
@@ -31,10 +31,12 @@ struct PersistenceController {
     let container: NSPersistentContainer
 
     init(inMemory: Bool = false) {
-        container = NSPersistentContainer(name: "CoreSwiftData")
+        container = NSPersistentContainer(name: "CoreSwiftData") //The name referencing the name of the file that was created in the bundle from scratch by Xcode.
+        //Container can be thought of a database which is holding all of our data.
         if inMemory {
             container.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
         }
+        //main functionality to lead the data from the container
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.
@@ -48,7 +50,7 @@ struct PersistenceController {
                  * The store could not be migrated to the current model version.
                  Check the error message to determine what the actual problem was.
                  */
-                fatalError("Unresolved error \(error), \(error.userInfo)")
+                fatalError("Unresolved error \(error), \(error.userInfo)") //Automatic crash of our app doing by apple
             }
         })
         container.viewContext.automaticallyMergesChangesFromParent = true
