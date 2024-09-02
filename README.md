@@ -22,7 +22,8 @@ At first we are getting our data by @FetchRequest
 
 
 ## TODO
-
+on 03.09.24:
+CoreData with MVVM.
 
 
 
