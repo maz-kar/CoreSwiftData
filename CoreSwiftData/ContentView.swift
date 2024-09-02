@@ -14,31 +14,28 @@ struct ContentView: View {
     @FetchRequest( //This sortes all the data in this request here by timestamp
         sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
         animation: .default)
-    private var items: FetchedResults<Item> //items var is @FetchRequest
+    private var items: FetchedResults<Item> //items var is @FetchRequest. items is of type FetchResults and it going to be bunch of Item.
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             List {
                 ForEach(items) { item in //Our first data is a List of items
-                    NavigationLink {
-                        Text("Item at \(item.timestamp!, formatter: itemFormatter)")
-                    } label: {
-                        Text(item.timestamp!, formatter: itemFormatter)
-                    }
+                    Text("Item at \(item.timestamp!, formatter: itemFormatter)")
                 }
                 .onDelete(perform: deleteItems)
             }
+            .listStyle(.plain)
+            .navigationTitle("Core Data")
             .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
+                ToolbarItem(placement: .topBarLeading) {
                     EditButton()
                 }
-                ToolbarItem {
+                ToolbarItem(placement: .topBarTrailing) {
                     Button(action: addItem) {
                         Label("Add Item", systemImage: "plus")
                     }
                 }
             }
-            Text("Select an item")
         }
     }
 

@@ -14,7 +14,7 @@ struct CoreSwiftDataApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView() //All the views and subviews will have access viewContext
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .environment(\.managedObjectContext, persistenceController.container.viewContext) //viewContext is the data inside of the container
         }
     }
 }
