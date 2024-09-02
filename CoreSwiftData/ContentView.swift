@@ -41,7 +41,7 @@ struct ContentView: View {
 
     private func addItem() {
         withAnimation {
-            let newItem = Item(context: viewContext)
+            let newItem = Item(context: viewContext) //we put this viewContext in the environment at the beginning.
             newItem.timestamp = Date()
 
             do {
@@ -57,6 +57,7 @@ struct ContentView: View {
 
     private func deleteItems(offsets: IndexSet) {
         withAnimation {
+            //Effective approach of finding the correct item and then delete it
             offsets.map { items[$0] }.forEach(viewContext.delete)
 
             do {
