@@ -7,6 +7,7 @@
 
 import CoreData
 
+//Here basically, we create a container, then load the data from the container and if there is an error in loading, the app will crash.
 struct PersistenceController { //This controller holds our Container
     static let shared = PersistenceController() //singleton: one instance that we gonno use in the entire app
 
@@ -36,7 +37,7 @@ struct PersistenceController { //This controller holds our Container
         if inMemory {
             container.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
         }
-        //main functionality to lead the data from the container
+        //main functionality to load the data from the container
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.
