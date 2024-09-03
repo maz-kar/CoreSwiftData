@@ -9,12 +9,12 @@ import SwiftUI
 
 @main
 struct CoreSwiftDataApp: App {
-    let persistenceController = PersistenceController.shared //singleton class
+    //let persistenceController = PersistenceController.shared //singleton class
 
     var body: some Scene {
         WindowGroup {
-            CoreDataFetch() //All the views and subviews will have access viewContext
-                .environment(\.managedObjectContext, persistenceController.container.viewContext) //viewContext is the data inside of the container
+            CoreDataMVVM() //All the views and subviews will have access viewContext
+                //.environment(\.managedObjectContext, persistenceController.container.viewContext) //viewContext is the data inside of the container
         }
     }
 }
