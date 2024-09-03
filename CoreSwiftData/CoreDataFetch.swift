@@ -8,7 +8,7 @@
 import SwiftUI
 import CoreData
 
-struct ContentView: View {
+struct CoreDataFetch: View {
     @Environment(\.managedObjectContext) private var viewContext
     
     //    @FetchRequest( //This sortes all the data in this request here by timestamp
@@ -134,5 +134,5 @@ private let itemFormatter: DateFormatter = {
 }()
 
 #Preview {
-    ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+    CoreDataFetch().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
 }
