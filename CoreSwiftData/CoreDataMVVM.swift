@@ -1,10 +1,10 @@
+////
+////  CoreData.swift
+////  CoreSwiftData
+////
+////  Created by Maziar Layeghkar on 03.09.24.
+////
 //
-//  CoreData.swift
-//  CoreSwiftData
-//
-//  Created by Maziar Layeghkar on 03.09.24.
-//
-
 import SwiftUI
 import CoreData
 
@@ -13,7 +13,7 @@ class CoreDataMVVMViewModel: ObservableObject {
     @Published var savedEntities: [VegetableEntity] = []
     
     init() {
-        container = NSPersistentContainer(name: "VegetableContainer")
+        container = NSPersistentContainer(name: "VegetablesContainer")
         container.loadPersistentStores { description, error in
             if let error = error {
                 print("Error while loading. \(error)")
@@ -75,7 +75,7 @@ struct CoreDataMVVM: View {
     var body: some View {
         NavigationStack {
             VStack(spacing: 15) {
-                TextField("Add vegetables here...", text: $textFieldText)
+              TextField("Add vegetables here...", text: $textFieldText)
                     .font(.headline)
                     .padding(.horizontal)
                     .frame(maxWidth: .infinity)

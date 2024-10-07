@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B46F1C72CB40F7B002F5E45 /* VegetablesContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6B46F1C52CB40F7B002F5E45 /* VegetablesContainer.xcdatamodeld */; };
 		6B6915922C7EF2B6000F138D /* CoreSwiftDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6915912C7EF2B6000F138D /* CoreSwiftDataApp.swift */; };
 		6B6915942C7EF2B6000F138D /* CoreDataFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6915932C7EF2B6000F138D /* CoreDataFetch.swift */; };
 		6B6915962C7EF2B8000F138D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B6915952C7EF2B8000F138D /* Assets.xcassets */; };
@@ -18,7 +19,6 @@
 		6B6915B42C7EF2B8000F138D /* CoreSwiftDataUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6915B32C7EF2B8000F138D /* CoreSwiftDataUITestsLaunchTests.swift */; };
 		6B6915C12C7EF488000F138D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6B6915C02C7EF488000F138D /* README.md */; };
 		6BFBAA482C874D0300588B14 /* CoreDataMVVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFBAA472C874D0300588B14 /* CoreDataMVVM.swift */; };
-		6BFBAA4E2C87512000588B14 /* VegetableContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6BFBAA4C2C87512000588B14 /* VegetableContainer.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6B46F1C62CB40F7B002F5E45 /* VegetablesContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VegetablesContainer.xcdatamodel; sourceTree = "<group>"; };
 		6B69158E2C7EF2B6000F138D /* CoreSwiftData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreSwiftData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B6915912C7EF2B6000F138D /* CoreSwiftDataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreSwiftDataApp.swift; sourceTree = "<group>"; };
 		6B6915932C7EF2B6000F138D /* CoreDataFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataFetch.swift; sourceTree = "<group>"; };
@@ -53,7 +54,6 @@
 		6B6915B32C7EF2B8000F138D /* CoreSwiftDataUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreSwiftDataUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		6B6915C02C7EF488000F138D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6BFBAA472C874D0300588B14 /* CoreDataMVVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataMVVM.swift; sourceTree = "<group>"; };
-		6BFBAA4D2C87512000588B14 /* VegetableContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VegetableContainer.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +84,7 @@
 		6B6915852C7EF2B6000F138D = {
 			isa = PBXGroup;
 			children = (
+				6B46F1C52CB40F7B002F5E45 /* VegetablesContainer.xcdatamodeld */,
 				6B6915C02C7EF488000F138D /* README.md */,
 				6B6915902C7EF2B6000F138D /* CoreSwiftData */,
 				6B6915A62C7EF2B8000F138D /* CoreSwiftDataTests */,
@@ -111,7 +112,6 @@
 				6B6915952C7EF2B8000F138D /* Assets.xcassets */,
 				6B69159A2C7EF2B8000F138D /* Persistence.swift */,
 				6B69159C2C7EF2B8000F138D /* CoreSwiftData.xcdatamodeld */,
-				6BFBAA4C2C87512000588B14 /* VegetableContainer.xcdatamodeld */,
 				6B6915972C7EF2B8000F138D /* Preview Content */,
 			);
 			path = CoreSwiftData;
@@ -273,12 +273,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B46F1C72CB40F7B002F5E45 /* VegetablesContainer.xcdatamodeld in Sources */,
 				6B69159B2C7EF2B8000F138D /* Persistence.swift in Sources */,
 				6B6915942C7EF2B6000F138D /* CoreDataFetch.swift in Sources */,
 				6B69159E2C7EF2B8000F138D /* CoreSwiftData.xcdatamodeld in Sources */,
 				6B6915922C7EF2B6000F138D /* CoreSwiftDataApp.swift in Sources */,
 				6BFBAA482C874D0300588B14 /* CoreDataMVVM.swift in Sources */,
-				6BFBAA4E2C87512000588B14 /* VegetableContainer.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -610,6 +610,16 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
+		6B46F1C52CB40F7B002F5E45 /* VegetablesContainer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6B46F1C62CB40F7B002F5E45 /* VegetablesContainer.xcdatamodel */,
+			);
+			currentVersion = 6B46F1C62CB40F7B002F5E45 /* VegetablesContainer.xcdatamodel */;
+			path = VegetablesContainer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
 		6B69159C2C7EF2B8000F138D /* CoreSwiftData.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
@@ -617,17 +627,6 @@
 			);
 			currentVersion = 6B69159D2C7EF2B8000F138D /* CoreSwiftData.xcdatamodel */;
 			path = CoreSwiftData.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-		6BFBAA4C2C87512000588B14 /* VegetableContainer.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				6BFBAA4D2C87512000588B14 /* VegetableContainer.xcdatamodel */,
-			);
-			currentVersion = 6BFBAA4D2C87512000588B14 /* VegetableContainer.xcdatamodel */;
-			name = VegetableContainer.xcdatamodeld;
-			path = /Users/maziarlayeghkar/Documents/CoreData/CoreSwiftData/CoreSwiftData/VegetableContainer.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
